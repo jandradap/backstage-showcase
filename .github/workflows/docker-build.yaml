@@ -82,7 +82,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: quay.io/jandrada/${{ env.IMAGE_NAME }}
           flavor: latest=true
           tags: type=sha
 
